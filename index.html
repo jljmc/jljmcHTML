@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>欢迎来到顾俊杰的个人网页！</title>
+	</head>
+		<link rel="stylesheet" href="/jljmcHTML/arknight_css.css">
+	<body>
+		<!-- 背景 -->
+		<video id="bgvideo" autoplay muted loop>
+			<source src="/jljmcHTML/images/arknight/海愿.mp4">
+		</video>
+		<!-- 立绘 -->
+		<img src="/jljmcHTML/images/arknight/立绘_斯卡蒂_1.png" id="skd">
+		
+		<!-- 左边 -->
+		<div class="left">
+			<div class="top">
+				<ul>
+					<li onclick="click1(),sg()"><img src="/jljmcHTML/images/arknight/设置.png" id="设置"></li>
+					<li onclick="click1(),lx(`gonggao`)"><img src="/jljmcHTML/images/arknight/告示.png"></li>
+					<li style="margin-top: 10px;" onclick="click1(),lx(`youxiang`)"><img src="/jljmcHTML/images/arknight/邮件.png"></li>
+					<li style="margin-top: 10px;" onclick="click1(),sg()"><img src="/jljmcHTML/images/arknight/日历.png"></li>
+				</ul>
+			</div>
+			<div class="middle">
+				<div class="rhodesisland"></div>
+				<div class="dj"><span>120</span><p>LV</p></div>
+				<div class="black"></div>
+				<div class="name" onclick="click1()">吉良吉马超<img src="/jljmcHTML/images/arknight/非礼勿视.png"><img src="/jljmcHTML/images/arknight/切换.png"><p>ID:640339599</p></div>
+				<div class="tell" ><p id="tell">注意安全，博士。</p></div>
+			</div>
+			<div class="buttom">
+				<div class="bleft"></div>
+				<div class="bright">
+					<div class="friend" onclick="click1(),lx(`hylbtb`)">好友</div>
+					<div class="archive" onclick="click1(),sg()">档案</div>
+				</div>
+			</div>
+		</div>
+		<div class="right">
+			<div class="zhongduan" onclick="click1(),sg()">终端</div>
+			<div class="bk" id="biandui" onclick="click1(),sg()">编队</div>
+			<div class="bk" id="ganyuan" onclick="click1(),sg()">干员</div>
+			<div id="caigo" class="bluek" onclick="click1(),sg()"><p>采购中心</p></div>
+			<div id="gz" class="bluek" onclick="click1(),sg()"><p>公开招募</p></div>
+			<div id="xf" class="bluek" onclick="click1(),sg()"><p>干员寻访</p></div>
+			<div class="bk" id="renwu" onclick="click1(),sg()">任务</div>
+			<div class="bk" id="jijian" onclick="click1(),sg()">基建</div>
+			<div class="cangku" onclick="click1(),sg()"></div>
+			<div id="zm" onclick="click1(),sg()">招募</div>
+		</div>
+		
+		<!-- 好友列表 -->
+		<div class="hy" id="hylbtb">
+			<div class="top">
+				<div class="left">
+					<div class="fh" onclick="click3(),gq(`hylbtb`)"><</div>
+					<div class="zy" onclick="click3()">|</div>
+				</div>
+				<div class="right">我的信息 <span>| 120吉良吉马超#2809</span></div>
+			</div>
+			<div class="botton">
+				<ul>
+					<li onclick="grmp(),click2()">个人名片</li>
+					<li onclick="hlyb(),click2()">好友列表</li>
+				</ul>
+				<div class="bx" id="tc">这个人很懒什么都没有写</div>
+			</div>
+		</div>
+		
+		<!-- 公告邮件 -->
+		<div id="gonggao" class="gonggao">
+				<div class="bigbox">
+					<div class="top">
+						<div class="hdgg" onclick="click2()">公告</div>
+						<div id="guandiao" onclick="click3(),gq(`gonggao`)">╳</div>
+					</div>
+					<div class="bottom">
+						<ul>
+							<li onclick="click2()"><div class="rq" >4月19</div><div class="st"></div>开发日志</li>
+						</ul>
+<p id='wz' onclick="click2()">2025<br>
+		3.15：<br>
+		今天开始开发个人博客<br>
+		打了一下午的代码<br>
+		蒂蒂终于能说话了<br>
+		3.16：<br>
+		修改网页<br>
+		3.21：<br>
+		修改了外部文件夹布局<br>
+		简化代码<br>
+		修改了底层代码把大部分的px改成%<br>
+		增添斯卡蒂语言<br>
+		该死的浏览器我怎么试都没法让他在加载时就开始播放音频，只好退而求其次让在第一次点击时发出固定语音<br>
+		明天加入计时器及闲置情况下的语音<br>
+		3.22：<br>
+		看了GBC和玩了杀戮尖塔（这和开发有关系吗）<br>
+		突然发现我的电脑是1440*900的<br>
+		但是现在大部分人的电脑是1920*1080的<br>
+		没发适配<br>
+		尝试做flex布局<br>
+		希望有用<br>
+		3.27:<br>
+		周四流鼻血<br>
+		直接回家休息了<br>
+		啥也干不了<br>
+		最开摆<br>
+		4.19:<br>
+		孩子们我打赢复活了<br>
+		终于恢复了<br>
+		完善界面<br>
+		增加更多的音效<br>
+		新添好友公告邮箱
+</p>
+		</div>
+	</div>
+</div>
+<!-- 邮件 -->
+		<div id="youxiang" class="gonggao">
+						<div class="bigbox">
+							<div class="top">
+								<div class="hdgg" onclick="click2()">邮箱📫</div>
+								<div id="guandiao" onclick="click3(),gq(`youxiang`)">╳</div>
+							</div>
+							<div class="bottom">
+								<ul>
+									<li onclick="click2()"><div class="rq" >4月19</div><div class="st"></div>我的邮箱</li>
+								</ul>
+		<p id='wz' onclick="click2()">芝士邮箱<br>
+		谷歌(不常用):<a href="mailto:wwwgjj16637@gmail.com">wwwgjj16637@gmail.com</a><br />
+		网易:<a href="mailto:wwwgjj644633919@163.com">wwwgjj644633919@163.com</a>
+		</p>
+				</div>
+			</div>
+		</div>
+		<!-- 音频素材 -->
+		<audio id="skdvoice">
+			<source src="/jljmcHTML/music/语音/arknight/问候.wav">
+		</audio>
+		<audio id="bgm" >
+			<source src="/jljmcHTML/music/海愿.mp3">
+		</audio>
+		<audio id="click1" >
+			<source src="/jljmcHTML/music/click1.mp3">
+		</audio>
+		<audio id="click2" >
+			<source src="/jljmcHTML/music/click2.mp3">
+		</audio>
+		<audio id="click3" >
+			<source src="/jljmcHTML/music/click3.mp3">
+		</audio>
+		<script src="/jljmcHTML/arknight_java.js"></script>
+	</body>
+</html>
