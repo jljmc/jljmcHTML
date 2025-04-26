@@ -59,7 +59,7 @@ html .body{
 .left .middle .rhodesisland{
 	width: 50%;
 	height: 50%;
-	background-image: url("../images/arknight/罗德岛.png");
+	background-image: url("/jljmcHTML/images/arknight/罗德岛.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: absolute;
@@ -115,7 +115,7 @@ html .body{
 .left .middle .tell{
 	width: 100%;
 	height: auto;
-	background-image: url("../images/arknight/vocie.png");
+	background-image: url("/jljmcHTML/images/arknight/vocie.png");
 	background-repeat: no-repeat;
 	position: absolute;
 	padding-top: 10%;
@@ -140,7 +140,7 @@ html .body{
 .left .buttom .bleft{
 	width: 60%;
 	height: 100%;
-	background-image: url("../images/arknight/我觉得这就是一种自信.jpg");
+	background-image: url("/jljmcHTML/images/arknight/我觉得这就是一种自信.jpg");
 	background-size: cover;
 }
 .left .buttom .bright{
@@ -151,7 +151,7 @@ html .body{
 	width: 100%;
 	height: 50%;
 	background-color: #424242;
-	background-image: url("../images/arknight/好友.png");
+	background-image: url("/jljmcHTML/images/arknight/好友.png");
 	background-repeat: no-repeat;
 	text-align: right;
 	line-height: 50px;
@@ -165,7 +165,7 @@ html .body{
 	width: 100%;
 	height: 50%;
 	background-color: #fdfcfb;
-	background-image: url("../images/arknight/archive.png");
+	background-image: url("/jljmcHTML/images/arknight/archive.png");
 	background-repeat: no-repeat;
 	text-align: right;
 	line-height: 50px;
@@ -193,7 +193,7 @@ html .body{
 	font-family: '宋体';
 	font-size: 5vw;
 	text-align: center;
-	background-image: url("../images/arknight/作战.png");
+	background-image: url("/jljmcHTML/images/arknight/作战.png");
 	background-repeat: no-repeat;
 	background-size: 10vw;
 	background-position:80% 10%;
@@ -306,42 +306,42 @@ html .body{
 	border-left: 1px #373737 solid;
 }
 .right #biandui{
-	background-image: url("../images/arknight/编队.png");
+	background-image: url("/jljmcHTML/images/arknight/编队.png");
 	background-repeat: no-repeat;
 	background-size: 6vw;
 	background-position: 90% 10%;
 	position: relative;
 }
 .right #ganyuan{
-	background-image: url("../images/arknight/干员.png");
+	background-image: url("/jljmcHTML/images/arknight/干员.png");
 	background-repeat: no-repeat;
 	background-size: 6vw;
 	background-position: 90% 10%;
 	position: relative;
 }
 .right #caigo{
-	background-image: url("../images/arknight/采购.png");
+	background-image: url("/jljmcHTML/images/arknight/采购.png");
 	background-repeat: no-repeat;
 	background-size: 6vw;
 	background-position: 90% 10%;
 	position: relative;
 }
 .right #gz{
-	background-image: url("../images/arknight/公招.png");
+	background-image: url("/jljmcHTML/images/arknight/公招.png");
 	background-repeat: no-repeat;
 	background-size: 4vw;
 	background-position:0% 80%;
 	position: relative;
 }
 .right #xf{
-	background-image: url("../images/arknight/通招.png");
+	background-image: url("/jljmcHTML/images/arknight/通招.png");
 	background-repeat: no-repeat;
 	background-size: 4vw;
 	background-position:0% 80%;
 	position: relative;
 }
 .right #renwu{
-	background-image: url("../images/arknight/任务.png");
+	background-image: url("/jljmcHTML/images/arknight/任务.png");
 	background-repeat: no-repeat;
 	background-size: 6vw;
 	background-position: 90% 10%;
@@ -356,7 +356,7 @@ html .body{
 	height: 10%;
 }
 .right #jijian{
-	background-image: url("../images/arknight/仓库.png");
+	background-image: url("/jljmcHTML/images/arknight/仓库.png");
 	background-repeat: no-repeat;
 	background-size: 6vw;
 	background-position: 90% 10%;
@@ -535,7 +535,7 @@ html .body{
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				background-image: url("../images/arknight/罗德岛（50%透明度）.png");
+				background-image: url("/jljmcHTML/images/arknight/罗德岛（50%透明度）.png");
 				background-position: -15% 120%;
 				background-size: 30%;
 				background-repeat: no-repeat;

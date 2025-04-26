@@ -13,13 +13,13 @@ function click3(){
 // 斯卡蒂语言播放
 let flag=false
 	let voice = [
-			"../music/语音/arknight/问候.wav",
-	        "../music/语音/arknight/交谈1.wav",
-	        "../music/语音/arknight/交谈2.wav",
-	        "../music/语音/arknight/交谈3.wav",
-			"../music/语音/arknight/信赖提升后交谈1.wav",
-			"../music/语音/arknight/信赖提升后交谈2.wav",
-			"../music/语音/arknight/信赖提升后交谈3.wav",
+			"/jljmcHTML/music/语音/arknight/问候.wav",
+	        "/jljmcHTML/music/语音/arknight/交谈1.wav",
+	        "/jljmcHTML/music/语音/arknight/交谈2.wav",
+	        "/jljmcHTML/music/语音/arknight/交谈3.wav",
+			"/jljmcHTML/music/语音/arknight/信赖提升后交谈1.wav",
+			"/jljmcHTML/music/语音/arknight/信赖提升后交谈2.wav",
+			"/jljmcHTML/music/语音/arknight/信赖提升后交谈3.wav",
 	    ];
 		let txt = [
 				"注意安全，博士。",
