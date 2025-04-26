@@ -339,6 +339,7 @@ html .body{
 	background-size: 4vw;
 	background-position:0% 80%;
 	position: relative;
+	z-index: 3;
 }
 .right #renwu{
 	background-image: url("/jljmcHTML/images/arknight/任务.png");
@@ -378,6 +379,7 @@ html .body{
 	left: 0;
 	text-align: left;
 	font-size: 12px;
+	z-index: 4;
 }
 .right .huidian{
 	position: absolute;
@@ -393,7 +395,7 @@ html .body{
 	left: -100%;
 	top: -100%;
 	background-color: rgb(0, 0, 0,70%);
-	z-index: 3;
+	z-index: 10;
 }
 			.hy .top{
 				display: flex;
@@ -482,7 +484,7 @@ html .body{
 				position: absolute;
 				left: -100%;
 				top: -100%;
-				z-index: 3;
+				z-index: 10;
 			}
 			.gonggao .bigbox{
 				width: 80%;
