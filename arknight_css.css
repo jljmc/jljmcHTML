@@ -24,13 +24,21 @@
 	z-index: 0;
 	cursor: pointer;
 }
+html .body{
+	width:100%;
+	height: 100vh;
+	display: flex;
+	justify-content: space-between;
+}
 .left{
 	left: 0;
+	width: 30%;
 	height: 100%;
+	position: relative;
 }
 .left .top{
-	margin-top: 20px;
-	margin-left: 30px;
+	margin-top: 1%;
+	margin-left: 3%	;
 }
 .left .top ul{
 	display: flex;
@@ -42,24 +50,26 @@
 	width: 40px;
 }
 .left .middle{
+	width: 100%;
+	height: 50%;
 	position: absolute;
 	left: 0;
 	top: 40%;
 }
 .left .middle .rhodesisland{
-	width: 220px;
-	height: 220px;
-	background-image: url("/jljmcHTML/images/arknight/罗德岛.png");
+	width: 50%;
+	height: 50%;
+	background-image: url("../images/arknight/罗德岛.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: absolute;
-	left: -25%;
-	top: -110%;
+	left: -10%;
+	top: -20%;
 	z-index: -1;
 }
 .left .middle .black{
 	background-color: #323232;
-	width:150px;
+	width:50%;
 	height: 30px;
 	z-index: 2;
 }
@@ -72,8 +82,8 @@
 	text-align: center;
 	color: #f3f9fc;
 	font-size: 40px;
-	left:45px;
-	top:-100%;
+	left:20%;
+	top: -20%;
 	z-index: 2;
 }
 .left .middle .dj span{
@@ -85,168 +95,295 @@
 }
 .left .middle .name{
 	text-align: center;
+	width: 80%;
 	font-size: 25px;
 	color: #f3f9fc;
-	padding-left: 20px;
+	left:20%;
 	z-index: 2;
 }
 .left .middle .name p{
 	font-size: 13px;
-	margin-left: -100px;
+	margin-left: -10%;
 }
 .left .middle .name img{
 	margin-top: 5px;
-	width: 30px;
+	width: 8%;
 }
 .left .middle .name img:first-child{
-	margin-left: 50px;
+	margin-left: 1%;
 }
 .left .middle .tell{
-	width: 350px;
-	height: 100px;
-	background-image: url("/jljmcHTML/images/arknight/vocie.png");
+	width: 100%;
+	height: auto;
+	background-image: url("../images/arknight/vocie.png");
 	background-repeat: no-repeat;
 	position: absolute;
-	padding-top: 30px;
+	padding-top: 10%;
+	padding-bottom:10%;
 	color: white;
 	padding-left: 50px;
-	font-size: 12px
+	font-size: 0.8vw;
 }
 .left .middle .tell p{
-	width: 300px;
+	width: 80%;
 }
 .left .buttom{
 	position: absolute;
-	bottom: 23%;
-	left: 30px;
-	height: 110px;
-	width: 360px;
+	bottom: 15%;
+	left: 3%;
+	background-color: wheat;
+	height: 15%;
+	width: 90%;
 	display: flex;
 	justify-content: space-around;
 }
 .left .buttom .bleft{
-	width: 200px;
-	height: 100px;
-	background-color: #128afa;
-	background-image: url("/jljmcHTML/images/arknight/我觉得这就是一种自信.jpg");
+	width: 60%;
+	height: 100%;
+	background-image: url("../images/arknight/我觉得这就是一种自信.jpg");
 	background-size: cover;
-	
+}
+.left .buttom .bright{
+	width: 40%;
+	height: 100%;
 }
 .left .buttom .bright .friend{
-	width: 145px;
-	height: 50px;
+	width: 100%;
+	height: 50%;
 	background-color: #424242;
-	background-image: url("/jljmcHTML/images/arknight/好友.png");
+	background-image: url("../images/arknight/好友.png");
 	background-repeat: no-repeat;
 	text-align: right;
 	line-height: 50px;
 	padding-right: 10px;
-	font-size: 30px;
+	font-size: 2vw;
 	color: #fdfcfb;
 	font-family: "宋体";
 	cursor: pointer;
 }
 .left .buttom .bright .archive{
-	width: 145px;
-	height: 50px;
+	width: 100%;
+	height: 50%;
 	background-color: #fdfcfb;
-	background-image: url("/jljmcHTML/images/arknight/archive.png");
+	background-image: url("../images/arknight/archive.png");
 	background-repeat: no-repeat;
 	text-align: right;
 	line-height: 50px;
 	padding-right: 10px;
-	font-size: 30px;
+	font-size: 2vw;
 	color: #424242;
 	font-family: "宋体";
 	cursor: pointer;
 }
 .right{
 	right: 0%;
-	height: 100%;
+	width: 50%;
+	height: 70%;
+	display: flex;
+	padding-top: 5%;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
 }
 .right .zhongduan{
 	border-radius: 3px;
-	position: absolute;
-	width: 35%;
-	height: 20%;
+	width: 90%;
+	height: 30%;
 	background-color: #fbf7f4;
-	/* right: -12%; */
-	right: 0;
 	font-family: '宋体';
-	font-size: 35px;
+	font-size: 5vw;
 	text-align: center;
+	background-image: url("../images/arknight/作战.png");
+	background-repeat: no-repeat;
+	background-size: 10vw;
+	background-position:80% 10%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.right .zhongduan .bw{
+	background-color: #373737;
+	width: 10%;
+	font-size: 1.8vw;
+	color:white;
+	padding: 2px;
+	border-radius: 2px;
+}
+.right .zhongduan .wc{
+	width: 100%;
+	color: #151110;
+	font-size: 1.8vw;
+}
+.right .zhongduan span{
+	width: 100%;
+	font-weight: 700;
+}
+.right .zhongduan #chentiao{
+	position: absolute;
+	background-color: #fe5e19;
+	width: 60%;
+	bottom: -3%;
+	right: 10%;
+	height: 6%;
+	
+}
+.right .zhongduan #lz{
+	position: absolute;
+	background-color:#c5c5c7;
+	width: 30%;
+	top:5%;
+	left: 5%;
+	height: 90%;
+	padding-right: 2%;
+	text-align: right;
+	font-family: "微软雅黑";
+}
+.right .zhongduan #lz #jia{
+	position: absolute;
+	background-color: rgb(0, 0, 0,80%);
+	color: white;
+	border-radius: 1000px;
+	text-align: center;
+	padding-left: 7px;
+	padding-right: 7px;
+	left: -10%;
+	top: 20%;
+	font-size: 2vw;
+	z-index: 5;
+}
+.right .zhongduan #lz span{
+	text-shadow: 3px 3px 0px rgb(0,0, 0,30%);
+	display: inline-block;
+	font-size: 4.5vw;
+	z-index: 10;
+}
+.right .zhongduan img{
+	position: absolute;
+	width: 60%;
+	height: 90%;
+	left: 0;
+	z-index: 4;
+}
+.right .zhongduan #lz p{
+	width: 100%;
+	position: absolute;
+	bottom: 0%;
+	font-family: "微软雅黑";
+	color: white;
+	background-color: #353534;
+	font-size: 2vw;
+	
 }
 .right .bk{
 	border-radius: 3px;
-	height: 12%;
-	width: 18%;
-	position: absolute;
+	height: 15%;
+	width: 45%;
+	min-width: 240px;
 	background-color:#fbf7f4;
 	padding: 10px;
-	font-size: 30px;
+	font-size: 2vw;
 	font-family: '宋体';
 	font-weight: 700;
 }
 .right .bluek{
 	border-radius: 3px;
-	height: 12%;
-	width: 12%;
-	position: absolute;
+	height: 14%;
+	min-width: 120px;
+	width: 29%;
 	color: white;
 	background-color:#0ba0d1;
 	padding: 10px;
-	font-size: 30px;
+	font-size: 2vw;
 	font-family: '宋体';
 	text-align: center;
 	font-weight: 700;
-}
-.right .bluek p{
-	margin-top: 25%;
-}
-.right #biandui{
-	top: 30%;
-	right: 20%;
-}
-.right #ganyuan{
-	top: 30%;
-	right: 0%;
-}
-.right #renwu{
-	top: 60%;
-	right: 20%;
-}
-.right #jijian{
-	top: 60%;
-	right: 0%;
-}
-.right #caigo{
-	top: 45%;
-	right:25%;
+	display: flex;
+	align-items: end;
 }
 .right #xf{
-	top: 45%;
-	right: 0%;
 	font-size: 25px;
 	border-left: 1px #373737 solid;
 }
+.right #biandui{
+	background-image: url("../images/arknight/编队.png");
+	background-repeat: no-repeat;
+	background-size: 6vw;
+	background-position: 90% 10%;
+	position: relative;
+}
+.right #ganyuan{
+	background-image: url("../images/arknight/干员.png");
+	background-repeat: no-repeat;
+	background-size: 6vw;
+	background-position: 90% 10%;
+	position: relative;
+}
+.right #caigo{
+	background-image: url("../images/arknight/采购.png");
+	background-repeat: no-repeat;
+	background-size: 6vw;
+	background-position: 90% 10%;
+	position: relative;
+}
 .right #gz{
-	top: 45%;
-	right: 12%;
+	background-image: url("../images/arknight/公招.png");
+	background-repeat: no-repeat;
+	background-size: 4vw;
+	background-position:0% 80%;
+	position: relative;
+}
+.right #xf{
+	background-image: url("../images/arknight/通招.png");
+	background-repeat: no-repeat;
+	background-size: 4vw;
+	background-position:0% 80%;
+	position: relative;
+}
+.right #renwu{
+	background-image: url("../images/arknight/任务.png");
+	background-repeat: no-repeat;
+	background-size: 6vw;
+	background-position: 90% 10%;
+	position: relative;
+}
+.right #renwu #chentiao{
+	position: absolute;
+	background-color: #fe5e19;
+	width: 80%;
+	top: -5%;
+	left: 10%;
+	height: 10%;
+}
+.right #jijian{
+	background-image: url("../images/arknight/仓库.png");
+	background-repeat: no-repeat;
+	background-size: 6vw;
+	background-position: 90% 10%;
+	position: relative;
+}
+.right #gz{
 	font-size: 25px;
 	border-left: 1px #373737 solid;
+	position:relative;
 	border-radius: 0;
 }
 .right #zm{
-	width: 20%;
+	width: 202%;
 	position: absolute;
-	height: 2%;
-	position: absolute;
+	height: 20%;
 	color: white;
 	background-color:#373737;
-	padding: 10px;
-	font-size: 20px;
-	right: 4%;
-	top: 46%;
+	top: 0%;
+	left: 0;
+	text-align: left;
+	font-size: 12px;
+}
+.right .huidian{
+	position: absolute;
+	right: 0%;
+	bottom:0%;
+	width: 60%;
 }
 /* 好友列表 */
 .hy{
@@ -286,9 +423,8 @@
 				line-height: 40px;
 			}
 			.hy .top .right{
-				margin: 1%;
 				height: 50px;
-				background-color: black;
+				background-color: rgb(0, 0, 0,0%);
 				color: white;
 				font-size: 20px;
 				line-height: 50px;
@@ -399,7 +535,7 @@
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				background-image: url("/jljmcHTML/images/arknight/罗德岛（50%透明度）.png");
+				background-image: url("../images/arknight/罗德岛（50%透明度）.png");
 				background-position: -15% 120%;
 				background-size: 30%;
 				background-repeat: no-repeat;
@@ -410,6 +546,21 @@
 				height: 90%;
 			}
 			.gonggao .bigbox .bottom ul li{
+			
+				list-style: none;
+					width: 100%;
+					height: 15%;
+					background-color:#313131 ;
+					color: #fafafa;
+					text-align: center;
+					display: flex;
+					margin-bottom: 10px;
+					justify-content: space-around;
+					align-items: center;
+					cursor: pointer;
+					border: 1px solid #fafafa;
+			}
+			.gonggao .bigbox .bottom ul li:active{
 				list-style: none;
 				width: 100%;
 				height: 15%;
@@ -417,18 +568,21 @@
 				color: #313131;
 				text-align: center;
 				display: flex;
+				margin-bottom: 10px;
 				justify-content: space-around;
 				align-items: center;
 				cursor: pointer;
-			}
+				}
+			
 			.gonggao .bigbox .bottom ul li .rq{
 				height: 80%;
 				width: 23%;
-				background-color: #313131;
+				background-color: #888888;
 				color: white;
 				border-radius: 3px;
 				text-align: center;
 			}
+			
 			.gonggao .bigbox .bottom #wz{
 				width: 65%;
 				height: 90%;
@@ -439,6 +593,6 @@
 			.gonggao .bigbox .bottom .st{
 				width: 1%;
 				height: 80%;
-				background-color: #313131;
+				background-color: #888888;
 				margin-left: -20%;
 			}

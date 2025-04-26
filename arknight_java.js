@@ -13,13 +13,13 @@ function click3(){
 // 斯卡蒂语言播放
 let flag=false
 	let voice = [
-			"/jljmcHTML/music/语音/arknight/问候.wav",
-	        "/jljmcHTML/music/语音/arknight/交谈1.wav",
-	        "/jljmcHTML/music/语音/arknight/交谈2.wav",
-	        "/jljmcHTML/music/语音/arknight/交谈3.wav",
-			"/jljmcHTML/music/语音/arknight/信赖提升后交谈1.wav",
-			"/jljmcHTML/music/语音/arknight/信赖提升后交谈2.wav",
-			"/jljmcHTML/music/语音/arknight/信赖提升后交谈3.wav",
+			"../music/语音/arknight/问候.wav",
+	        "../music/语音/arknight/交谈1.wav",
+	        "../music/语音/arknight/交谈2.wav",
+	        "../music/语音/arknight/交谈3.wav",
+			"../music/语音/arknight/信赖提升后交谈1.wav",
+			"../music/语音/arknight/信赖提升后交谈2.wav",
+			"../music/语音/arknight/信赖提升后交谈3.wav",
 	    ];
 		let txt = [
 				"注意安全，博士。",
@@ -66,19 +66,9 @@ function bgclose(){
 }
 
 bgvideo.addEventListener('click', bgclose)
-// const alldive = document.querySelectorAll('div');
-
-// 为每个div添加事件监听
-// alldive.forEach(div => {
-  // div.addEventListener('click', function(event) {
-
-		
-  // })
-// })
-// bk.addEventListener('click',click1())
 // 好友
 function sg(){
-	alert('该功能正在开发中🛠')
+	alert('该功能正在开发中🛠,可用的为左上角的‘⚠’，‘📫’,好友')
 }
 let tc=document.getElementById('tc')
 			let hytxt=[
@@ -107,6 +97,51 @@ function gq(ggq){
 	top: -100%;
 	`
 }
-
-
 // 公告邮件
+let ggrz={
+	"4月19":`2025<br>
+		3.15：<br>
+		今天开始开发个人博客<br>
+		打了一下午的代码<br>
+		蒂蒂终于能说话了<br>
+		3.16：<br>
+		修改网页<br>
+		3.21：<br>
+		修改了外部文件夹布局<br>
+		简化代码<br>
+		修改了底层代码把大部分的px改成%<br>
+		增添斯卡蒂语言<br>
+		该死的浏览器我怎么试都没法让他在加载时就开始播放音频，只好退而求其次让在第一次点击时发出固定语音<br>
+		明天加入计时器及闲置情况下的语音<br>
+		3.22：<br>
+		看了GBC和玩了杀戮尖塔（这和开发有关系吗）<br>
+		突然发现我的电脑是1440*900的<br>
+		但是现在大部分人的电脑是1920*1080的<br>
+		没发适配<br>
+		尝试做flex布局<br>
+		希望有用<br>
+		3.27:<br>
+		周四流鼻血<br>
+		直接回家休息了<br>
+		啥也干不了<br>
+		最开摆<br>
+		4.19:<br>
+		孩子们我打赢复活了<br>
+		终于恢复了<br>
+		完善界面<br>
+		增加更多的音效<br>
+		新添好友公告邮箱`,
+		"4月26":`
+		4.26:<br>
+		又改了网页的布局<br>
+		现在基本上没有几个px了
+		`
+}
+let gzts=['4月26','4月19']
+let wz=document.getElementById('wz')
+let rzsj=document.querySelectorAll('#gonggao .bottom ul li')
+for(let i=0;i<gzts.length;i++){
+	rzsj[i].addEventListener('click',function(){
+		wz.innerHTML=ggrz[gzts[i]]
+	})
+}
