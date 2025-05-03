@@ -28,7 +28,7 @@
 				<div class="dj"><span>120</span><p>LV</p></div>
 				<div class="black"></div>
 				<div class="name" onclick="click1()">吉良吉马超<img src="/jljmcHTML/images/arknight/非礼勿视.png"><img src="/jljmcHTML/images/arknight/切换.png"><p>ID:640339599</p></div>
-				<div class="tell" ><p id="tell">注意安全，博士。</p></div>
+				<div class="tell" ><div class="tell1"></div><p id="tell">注意安全，博士。</p><div class="tell2"></div></div>
 			</div>
 			<div class="buttom">
 				<div class="bleft"></div>
@@ -90,11 +90,18 @@
 				<div class="right">我的信息 <span>| 120吉良吉马超#2809</span></div>
 			</div>
 			<div class="botton">
-				<ul>
+				<ul class="ulone">
 					<li onclick="grmp(),click2()">个人名片</li>
 					<li onclick="hlyb(),click2()">好友列表</li>
 				</ul>
-				<div class="bx" id="tc">这个人很懒什么都没有写</div>
+				<div class="bx" id="tc">
+					<p>这个人很懒什么都没有写</p>
+					<ul class="ultwo">
+						<li><div><div style="height: 80px;width: 80px;border: 2px solid white;margin-left: 2%;background-image: url('/jljmcHTML/images/friends/c_1.jpg');background-size: cover;"><span>c</span></div></div><div><a href="https://sad-chen.github.io/c/" target="_blank"></a></div></li>
+						<li><div><div style="height: 80px;width: 80px;border: 2px solid white;margin-left: 2%;background-image: url('/jljmcHTML/images/friends/奇怪の拜月教徒_1.jpg');background-size: cover;"><span>奇怪の拜月教徒</span></div></div><div><a href="https://myhubforever.github.io/webProject/" target="_blank"></a></div></li>
+						<li><div><div style="height: 80px;width: 80px;border: 2px solid white;margin-left: 2%;background-image: url('/jljmcHTML/images/friends/绝无尘_1.jpg');background-size: cover;"><span>绝无尘</span></div></div><div><a href="https://z-jx123.github.io/666/" target="_blank"></a></div></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		
@@ -107,13 +114,17 @@
 					</div>
 					<div class="bottom">
 						<ul>
+							<li onclick="click2()"><div class="rq" >5月3</div><div class="st"></div>开发日志</li>
+							<li onclick="click2()"><div class="rq" >5月2</div><div class="st"></div>开发日志</li>
 							<li onclick="click2()"><div class="rq" >4月26</div><div class="st"></div>开发日志</li>
 							<li onclick="click2()"><div class="rq" >4月19</div><div class="st"></div>开发日志</li>
 						</ul>
 <p id='wz' onclick="click2()">
-	4.26:<br>
-	又改了网页的布局<br>
-	现在基本上没有几个px了
+	5.3:<br>
+	今天完善了好友列表<br>
+	我服了，为什么我早起写的代码怎么这么乱啊<br>
+	也许有时间整个2.0出来<br>
+	又修改了网页中的px变成vw或者%
 </p>
 </div>
 	</div>
@@ -138,19 +149,19 @@
 		</div>
 		<!-- 音频素材 -->
 		<audio id="skdvoice">
-			<source src="../music/语音/arknight/问候.wav">
+			<source src="/jljmcHTML/music/语音/arknight/问候.wav">
 		</audio>
 		<audio id="bgm" >
-			<source src="../music/海愿.mp3">
+			<source src="/jljmcHTML/music/海愿.mp3">
 		</audio>
 		<audio id="click1" >
-			<source src="../music/click1.mp3">
+			<source src="/jljmcHTML/music/click1.mp3">
 		</audio>
 		<audio id="click2" >
-			<source src="../music/click2.mp3">
+			<source src="/jljmcHTML/music/click2.mp3">
 		</audio>
 		<audio id="click3" >
-			<source src="../music/click3.mp3">
+			<source src="/jljmcHTML/music/click3.mp3">
 		</audio>
 		<script src="/jljmcHTML/arknight_java.js"></script>
 	</body>

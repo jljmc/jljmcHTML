@@ -71,17 +71,16 @@ function sg(){
 	alert('该功能正在开发中🛠,可用的为左上角的‘⚠’，‘📫’,好友')
 }
 let tc=document.getElementById('tc')
-			let hytxt=[
-				'这个人很懒什么都没有写',
-				'这个人在这里没有好友QAQ'
-			]
-			function grmp(){
-				tc.innerHTML=hytxt[0]
-			}
-			function hlyb(){
-				tc.innerHTML=hytxt[1]
-			}
-// let hylbtb=document.getElementById('hylbtb')
+let grmpid=document.querySelector('#tc p')
+let hylbul=document.querySelector('#tc ul')
+function grmp(){
+	grmpid.style.display='block'
+	hylbul.style.display='none'
+}
+function hlyb(){
+	grmpid.style.display='none'
+	hylbul.style.display='block'
+}
 function gqlx(name){
 	return document.getElementById(name)
 }
@@ -97,47 +96,62 @@ function gq(ggq){
 	top: -100%;
 	`
 }
-// 公告邮件
-let ggrz={
-	"4月19":`2025<br>
-		3.15：<br>
-		今天开始开发个人博客<br>
-		打了一下午的代码<br>
-		蒂蒂终于能说话了<br>
-		3.16：<br>
-		修改网页<br>
-		3.21：<br>
-		修改了外部文件夹布局<br>
-		简化代码<br>
-		修改了底层代码把大部分的px改成%<br>
-		增添斯卡蒂语言<br>
-		该死的浏览器我怎么试都没法让他在加载时就开始播放音频，只好退而求其次让在第一次点击时发出固定语音<br>
-		明天加入计时器及闲置情况下的语音<br>
-		3.22：<br>
-		看了GBC和玩了杀戮尖塔（这和开发有关系吗）<br>
-		突然发现我的电脑是1440*900的<br>
-		但是现在大部分人的电脑是1920*1080的<br>
-		没发适配<br>
-		尝试做flex布局<br>
-		希望有用<br>
-		3.27:<br>
-		周四流鼻血<br>
-		直接回家休息了<br>
-		啥也干不了<br>
-		最开摆<br>
-		4.19:<br>
-		孩子们我打赢复活了<br>
-		终于恢复了<br>
-		完善界面<br>
-		增加更多的音效<br>
-		新添好友公告邮箱`,
-		"4月26":`
-		4.26:<br>
-		又改了网页的布局<br>
-		现在基本上没有几个px了
-		`
+const hylb=['c_2.jpg','奇怪の拜月教徒_2.jpg','绝无尘_2.jpg']
+let hylbb=document.querySelectorAll(".hy .botton .bx ul li")
+for(let i=0;i<hylb.length;i++){
+	hylbb[i].style.backgroundImage=`url("/jljmcHTML/images/friends/${hylb[i]}")`
 }
-let gzts=['4月26','4月19']
+
+// 公告邮件
+let ggrz = {
+    "4月19": `2025<br>
+        3.15：<br>
+        今天开始开发个人博客<br>
+        打了一下午的代码<br>
+        蒂蒂终于能说话了<br>
+        3.16：<br>
+        修改网页<br>
+        3.21：<br>
+        修改了外部文件夹布局<br>
+        简化代码<br>
+        修改了底层代码把大部分的px改成%<br>
+        增添斯卡蒂语言<br>
+        该死的浏览器我怎么试都没法让他在加载时就开始播放音频，只好退而求其次让在第一次点击时发出固定语音<br>
+        明天加入计时器及闲置情况下的语音<br>
+        3.22：<br>
+        看了GBC和玩了杀戮尖塔（这和开发有关系吗）<br>
+        突然发现我的电脑是1440*900的<br>
+        但是现在大部分人的电脑是1920*1080的<br>
+        没发适配<br>
+        尝试做flex布局<br>
+        希望有用<br>
+        3.27:<br>
+        周四流鼻血<br>
+        直接回家休息了<br>
+        啥也干不了<br>
+        最开摆<br>
+        4.19:<br>
+        孩子们我打赢复活了<br>
+        终于恢复了<br>
+        完善界面<br>
+        增加更多的音效<br>
+        新添好友公告邮箱`,
+    "4月26": `4.26:<br>
+        又改了网页的布局<br>
+        现在基本上没有几个px了`,
+    "5月2": `5.2:<br>
+        昨天去朋友家玩使用他的电脑检查UI问题<br>
+        今天修改了对话部分的问题<br>
+        拆成了三个部分<br>
+        现在正常了`,
+	"5月3":`5.3:<br>
+	今天完善了好友列表<br>
+	我服了，为什么我早起写的代码怎么这么乱啊<br>
+	也许有时间整个2.0出来<br>
+	又修改了网页中的px变成vw或者%
+	`
+	};
+let gzts = ['5月3','5月2', '4月26', '4月19'];
 let wz=document.getElementById('wz')
 let rzsj=document.querySelectorAll('#gonggao .bottom ul li')
 for(let i=0;i<gzts.length;i++){

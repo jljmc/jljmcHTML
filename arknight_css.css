@@ -113,19 +113,40 @@ html .body{
 	margin-left: 1%;
 }
 .left .middle .tell{
-	width: 100%;
+	width: 60%;
 	height: auto;
-	background-image: url("/jljmcHTML/images/arknight/vocie.png");
+	background-color: rgb(0,0,0,70%);
 	background-repeat: no-repeat;
 	position: absolute;
-	padding-top: 10%;
-	padding-bottom:10%;
+	padding-top: 5%;
+	padding-bottom:5%;
 	color: white;
-	padding-left: 50px;
+	padding-left:5%;
 	font-size: 0.8vw;
+	left: 10%;
 }
 .left .middle .tell p{
-	width: 80%;
+	width: 90%;
+}
+.left .middle .tell .tell1{
+	background-image: url("/jljmcHTML/images/arknight/vocie_1.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 72px;
+	height: 13px;
+	position: absolute;
+	left: -2%;
+	top:-5%;
+}
+.left .middle .tell .tell2{
+	background-image: url("/jljmcHTML/images/arknight/vocie_2.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 19px;
+	height: 13px;
+	position: absolute;
+	right: 2%;
+	bottom:5%;
 }
 .left .buttom{
 	position: absolute;
@@ -400,6 +421,7 @@ html .body{
 			.hy .top{
 				display: flex;
 				justify-content: space-between;
+				align-items: center;
 			}
 			.hy .top .left{
 				height: 50px;
@@ -440,14 +462,14 @@ html .body{
 				width: 100%;
 				height: 600px;
 			}
-			.hy .botton ul{
+			.hy .botton .ulone{
 				margin: 1%;
 				width: 10%;
 			}
-			.hy .botton ul li{
+			.hy .botton .ulone li{
 				list-style: none;
 				width: 100%;
-				height: 60px;
+				mine-height: 60px;
 				background-color: #323232;
 				border: 1px solid white;
 				color: white;
@@ -455,6 +477,49 @@ html .body{
 				margin-top: 5px;
 				text-align: center;
 				box-shadow:0px 0px 10px 10px rgb(0, 0, 0,30%) ;
+			}
+			.hy .botton .ultwo{
+				display: none;
+				width: 100%;
+				height: 100%;
+			}
+			.hy .botton .ultwo li{
+				list-style: none;
+				width: 96%;
+				height: 20%;
+				min-height: 60px;
+				background-color: #323232;
+				color: white;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-bottom: 2%;
+				padding-left: 2%;
+				padding-right: 2%;
+				box-shadow:0px 0px 10px 10px rgb(0, 0, 0,30%) ;
+				background-position: -50% -50%;
+				background-size: cover;
+			}
+		/* 	.hy .botton .ultwo li div p{
+				display: inline-block;
+			} */
+			.hy .botton .ultwo li div div{
+				position: relative;
+			}
+			.hy .botton .ultwo li div div span{
+				position: absolute;
+				width: 200px;
+				right: -300%;
+			}
+			.hy .botton .ultwo li a{
+				text-decoration:none;
+				color: white;
+				height: 30px;
+				width: 30px;
+				background-image: url('/jljmcHTML/images/friends/好友.png');
+				background-repeat: no-repeat;
+				background-size: cover;
+				display: inline-block;
 			}
 			.hy .botton .bx{
 				width: 60%;
